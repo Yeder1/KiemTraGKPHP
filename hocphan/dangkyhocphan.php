@@ -27,7 +27,7 @@ $result = $conn->query($sql);
             <th>Mã Học Phần</th>
             <th>Tên Học Phần</th>
             <th>Số Tín Chỉ</th>
-            
+            <th>Số lượng dự kiến</th>
             <th>Hành động</th>
         </tr>
         <?php while ($row = $result->fetch_assoc()): ?>
@@ -35,13 +35,13 @@ $result = $conn->query($sql);
                 <td><?= $row['MaHP'] ?></td>
                 <td><?= $row['TenHP'] ?></td>
                 <td><?= $row['SoTinChi'] ?></td>
-                
+                <td><?= $row['SoLuong'] ?></td>
                 <td>
-                    
+                    <?php if ($row['SoLuong'] > 0): ?>
                         <a href="../hocphan/xulydangky.php?MaHP=<?= $row['MaHP'] ?>">Đăng Ký</a>
-                    <?php ?>
-                        
-                    
+                    <?php else: ?>
+                        Hết chỗ
+                    <?php endif; ?>
                 </td>
             </tr>
         <?php endwhile; ?>
