@@ -1,4 +1,5 @@
 <?php
+include '../shared/header.php';
 include '../config/config.php';
 session_start();
 
@@ -11,9 +12,9 @@ $MaSV = $_SESSION['MaSV'];
 $MaHP = $_GET['MaHP'];
 
 // Kiểm tra số lượng còn chỗ không
-$check_slot = $conn->query("SELECT Soluong FROM HocPhan WHERE MaHP='$MaHP'");
+$check_slot = $conn->query("SELECT SoLuong FROM HocPhan WHERE MaHP='$MaHP'");
 $row = $check_slot->fetch_assoc();
-if ($row['Soluong'] <= 0) {
+if ($row['SoLuong'] <= 0) {
     die("Học phần đã hết chỗ!");
 }
 
@@ -33,7 +34,7 @@ if ($check_result->num_rows == 0) {
 $conn->query("INSERT INTO ChiTietDangKy (MaDK, MaHP) VALUES ('$MaDK', '$MaHP')");
 
 // Giảm số lượng sinh viên
-$conn->query("UPDATE HocPhan SET Soluong = Soluong - 1 WHERE MaHP = '$MaHP'");
+$conn->query("UPDATE HocPhan SET SoLuong = SoLuong - 1 WHERE MaHP = '$MaHP'");
 
 header("Location: ../hocphan/dangkyhocphan.php");
 ?>

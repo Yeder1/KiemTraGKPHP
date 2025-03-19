@@ -24,10 +24,34 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <title>Đăng Nhập</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        body {
+            background-color: #ffe6f2;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .card {
+            background-color: #fff0f5;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px #ff99cc;
+        }
+        h2 {
+            color: #ff66b2;
+        }
+        .btn-primary {
+            background-color: #ff66b2;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #ff3385;
+        }
+    </style>
 </head>
 <body class="container d-flex justify-content-center align-items-center vh-100">
     <div class="card p-4 shadow-lg" style="width: 400px;">
-        <h2 class="text-center text-primary">Đăng Nhập</h2>
+        <h2 class="text-center">Đăng Nhập</h2>
         <form method="post">
             <div class="mb-3">
                 <label class="form-label">Mã Sinh Viên</label>

@@ -1,4 +1,5 @@
 <?php
+include '../shared/header.php';
 include '../config/config.php';
 
 $MaSV = $_GET['MaSV'];
