@@ -1,0 +1,152 @@
+/* ----- Cấu hình chung ----- */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----- Thanh điều hướng ----- */
+.navbar {
+    background-color: #007bff;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #f8f9fa;
+}
+
+/* ----- Bố cục chung ----- */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* ----- Tiêu đề chính ----- */
+h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* ----- Bảng dữ liệu ----- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #dee2e6;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* ----- Các nút bấm ----- */
+.btn {
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    color: black;
+}
+
+.btn-warning:hover {
+    background-color: #e0a800;
+}
+
+/* ----- Form đăng nhập ----- */
+.login-form {
+    width: 350px;
+    margin: auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #0056b3;
+}
+
+/* ----- Footer ----- */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #343a40;
+    color: white;
+    margin-top: 20px;
+}
